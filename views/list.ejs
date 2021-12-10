@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+        <title>to do list</title>
+       
+    </head>
+    <body>
+        
+        <link rel="stylesheet" href="css/styles.css">
+
+      <div class="box" id="heading">  <h1> Hi Aman, TODAY IS <%=listTitle%> ! </h1> </div>
+   <div class="box">
+     <% for(var i=0;i<newTask.length;i++){ %>
+         <div class="item">
+             <input type="checkbox">
+      <p> <%=    newTask[i]  %>   </p>
+    </div>
+    <% }  %>
+  
+     <form class="item" action="/" method="post">
+        <input type="text" name="addTask" placeholder="New item" autocomplete="off">
+        <button type="submit" name="button">+</button>
+     </form>
+     </div>
+       
+    </body>
+</html> 
